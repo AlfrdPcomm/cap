@@ -1,0 +1,89 @@
+{
+  "vtex.menu@2.x:menu#websites": {
+    "children": [
+      "menu-item#shop",
+      "menu-item#about-us"
+    ]
+  },
+  "menu-item#shop": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#menuItemShop"
+    ]
+  },
+  "menu-item#menuItemShop":{
+    "props": {
+      "id": "menu-item-category-shop",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop/d",
+        "noFollow": true,
+        "tagTitle": "Shop",
+        "text": "Shop"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#shop"]
+  },
+  
+  "vtex.menu@2.x:submenu.accordion#shop": {
+    "children": ["vtex.menu@2.x:menu#shop-accordion"]
+  },
+  
+  "vtex.menu@2.x:menu#shop-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#shorts"
+    ]
+  },
+
+  
+  "menu-item#shorts": {
+    "props": {
+      "id": "menu-item-shorts",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop/shorts",
+        "noFollow": false,
+        "tagTitle": "Shorts",
+        "text": "Shorts"
+      }
+    }
+  },
+
+
+
+
+
+
+
+  "vtex.menu@2.x:menu#institutional": {
+    "children": [
+      "menu-item#vtex-website"
+    ]
+  },
+  "menu-item#vtex-website": {
+    "props": {
+      "id": "menu-item-vtex-website",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "http://vtex.com",
+        "noFollow": false,
+        "tagTitle": "visit vtex.com",
+        "text": "visit vtex.com"
+      }
+    }
+  }
+}

@@ -1,0 +1,507 @@
+{
+  "store.home": {
+    "blocks": [
+      "flex-layout.row#carruselimg",
+      "flex-layout.row#title1",
+      "flex-layout.row#deals",
+      "flex-layout.row#title2",
+      "flex-layout.row#sections",
+      "flex-layout.row#waterproofing",
+      "flex-layout.row#title3",
+      "list-context.product-list#listContext1",
+      "flex-layout.row#humidity-industry",
+      "flex-layout.row#title4",
+      "list-context.product-list#listContext1",
+      "flex-layout.row#newsletter"
+    ]
+  },
+
+  // >>>>>>>>>>>>>>>>>> Carrusel de imagenes <<<<<<<<<<<<<<<<<<
+  "flex-layout.row#carruselimg":{
+    "children":[
+      "list-context.image-list#demo"
+    ],
+    "props":{
+      "fullwidth":true
+    }
+  },
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 720,
+      "images": [
+        {
+          "image": "assets/sliderLayoutImg1.jpg",
+          "description": "something something"
+        },
+        {
+          "image": "assets/sliderLayoutImg2.jpg",
+          "description": "something something"
+        },
+        {
+          "image": "assets/sliderLayoutImg3.jpg",
+          "description": "something something"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true
+    }
+  },
+
+
+
+  // >>>>>>>>>>>>>>>>>> Titulo <<<<<<<<<<<<<<<<<<
+  "flex-layout.row#title1":{
+    "children":[
+      "rich-text#titleText1"
+    ]
+  },
+  "rich-text#titleText1":{
+    "props":{
+      "font": "t-heading-1",
+      "text":"Seguridad y Confianza en nuestros productos",      
+      "textPosition": "CENTER"
+    }
+  },
+
+
+
+  // >>>>>>>>>>>>>>>>>> Deals <<<<<<<<<<<<<<<<<<
+  "flex-layout.row#deals":{
+    "children":[
+      "flex-layout.col#deal1",
+      "flex-layout.col#deal2",
+      "flex-layout.col#deal3",
+      "flex-layout.col#deal4",
+      "flex-layout.col#deal5"
+    ]
+  },
+
+  // Deal 1
+  "flex-layout.col#deal1":{
+    "children":[
+      "flex-layout.row#deal1",
+      "rich-text#textDeal1"
+    ]
+  },
+  "flex-layout.row#deal1":{
+    "children":[
+      "image#imgDeal1"
+    ],
+    "props":{
+      "horizontalAlign": "center"
+    }
+  },
+  "image#imgDeal1":{
+    "props":{
+      "src":"assets/deal1.svg"
+    }
+  },
+  "rich-text#textDeal1":{
+    "props":{
+      "text": "Fácil aplicación"
+    }
+  },
+
+  // Deal 2
+  "flex-layout.col#deal2":{
+    "children":[
+      "flex-layout.row#deal2",
+      "rich-text#textDeal2"
+    ]
+  },
+  "flex-layout.row#deal2":{
+    "children":[
+      "image#imgDeal2"
+    ],
+    "props":{
+      "horizontalAlign": "center"
+    }
+  },
+  "image#imgDeal2":{
+    "props":{
+      "src":"assets/deal2.svg"
+    }
+  },
+  "rich-text#textDeal2":{
+    "props":{
+      "text": "Facilidad de compra"
+    }
+  },
+
+  // Deal 3
+  "flex-layout.col#deal3":{
+    "children":[
+      "flex-layout.row#deal3",
+      "rich-text#textDeal3"
+    ]
+  },
+  "flex-layout.row#deal3":{
+    "children":[
+      "image#imgDeal3"
+    ],
+    "props":{
+      "horizontalAlign": "center"
+    }
+  },
+  "image#imgDeal3":{
+    "props":{
+      "src":"assets/deal3.svg"
+    }
+  },
+  "rich-text#textDeal3":{
+    "props":{
+      "text": "Soluciones a todo"
+    }
+  },
+
+  // Deal 4
+  "flex-layout.col#deal4":{
+    "children":[
+      "flex-layout.row#deal4",
+      "rich-text#textDeal4"
+    ]
+  },
+  "flex-layout.row#deal4":{
+    "children":[
+      "image#imgDeal4"
+    ],
+    "props":{
+      "horizontalAlign": "center"
+    }
+  },
+  "image#imgDeal4":{
+    "props":{
+      "src":"assets/deal4.svg"
+    }
+  },
+  "rich-text#textDeal4":{
+    "props":{
+      "text": "Pago seguro"
+    }
+  },
+
+  // Deal 5
+  "flex-layout.col#deal5":{
+    "children":[
+      "flex-layout.row#deal5",
+      "rich-text#textDeal5"
+    ]
+  },
+  "flex-layout.row#deal5":{
+    "children":[
+      "image#imgDeal5"
+    ],
+    "props":{
+      "horizontalAlign": "center"
+    }
+  },
+  "image#imgDeal5":{
+    "props":{
+      "src":"assets/deal5.svg"
+    }
+  },
+  "rich-text#textDeal5":{
+    "props":{
+      "text": "Entrega a domicilio"
+    }
+  },
+
+
+
+  // >>>>>>>>>>>>>>>>>> Titulo 2 <<<<<<<<<<<<<<<<<<
+  "flex-layout.row#title2":{
+    "children":[
+      "rich-text#titleText2"
+    ]
+  },
+  "rich-text#titleText2":{
+    "props":{
+      "font": "t-heading-1",
+      "text":"¿Cómo podemos ayudarte?",      
+      "textPosition": "CENTER"
+    }
+  },
+
+
+
+  // >>>>>>>>>>>>>>>>>> Sections <<<<<<<<<<<<<<<<<<
+  "flex-layout.row#sections":{
+    "children":[
+      "flex-layout.col#section1",
+      "flex-layout.col#section2",
+      "flex-layout.col#section3",
+      "flex-layout.col#section4"
+    ]
+  },
+
+  // Section 1
+  "flex-layout.col#section1":{
+    "children":[
+      "rich-text#sectionTitle1",
+      "rich-text#sectionText1",
+      "image#imgSection1"
+    ]
+  },
+  "rich-text#sectionTitle1":{
+    "props":{
+      "font": "t-heading-4",
+      "text": "Sella y Pega"
+    }
+  },
+  "rich-text#sectionText1":{
+    "props":{
+      "text": "Garantiza la unión, flexibilidad e impermeabilización de juntas"
+    }
+  },
+  "image#imgSection1":{
+    "props":{
+      "src":"assets/section1.png"
+    }
+  },
+
+  // Section 2
+  "flex-layout.col#section2":{
+    "children":[
+      "rich-text#sectionTitle2",
+      "rich-text#sectionText2",
+      "image#imgSection2"
+    ]
+  },
+  "rich-text#sectionTitle2":{
+    "props":{
+      "font": "t-heading-4",
+      "text": "Repara y Protege"
+    }
+  },
+  "rich-text#sectionText2":{
+    "props":{
+      "text": "Fortalecer y reparar la estructura constructiva"
+    }
+  },
+  "image#imgSection2":{
+    "props":{
+      "src":"assets/section2.png"
+    }
+  },
+
+  // Section 3
+  "flex-layout.col#section3":{
+    "children":[
+      "rich-text#sectionTitle3",
+      "rich-text#sectionText3",
+      "image#imgSection3"
+    ]
+  },
+  "rich-text#sectionTitle3":{
+    "props":{
+      "font": "t-heading-4",
+      "text": "Impermeabiliza"
+    }
+  },
+  "rich-text#sectionText3":{
+    "props":{
+      "text": "Sistemas que detienen el paso de la humedad dependiendo la etapas constructivas"
+    }
+  },
+  "image#imgSection3":{
+    "props":{
+      "src":"assets/section3.jpg"
+    }
+  },
+
+  // Section 4
+  "flex-layout.col#section4":{
+    "children":[
+      "rich-text#sectionTitle4",
+      "rich-text#sectionText4",
+      "image#imgSection4"
+    ]
+  },
+  "rich-text#sectionTitle4":{
+    "props":{
+      "font": "t-heading-4",
+      "text": "Decora"
+    }
+  },
+  "rich-text#sectionText4":{
+    "props":{
+      "text": "Soluciones de acabados finales para Muros y Fachadas"
+    }
+  },
+  "image#imgSection4":{
+    "props":{
+      "src":"assets/section4.jpg"
+    }
+  },
+
+
+  // >>>>>>>>>>>>>>>>>> Infocard waterproofing <<<<<<<<<<<<<<<<<<
+  "flex-layout.row#waterproofing":{
+    "children":[
+      "info-card#waterproofing"
+    ]
+  },
+
+  "info-card#waterproofing": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "assets/waterproofing.jpg",
+      "headline": "Temporada de lluvias",
+      "subhead": "Nuestra gama de productos que detiene el paso de la humedad y previenen daños",
+      "callToActionText": "Ver productos",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+
+
+  
+  // >>>>>>>>>>>>>>>>>> Titulo 3 <<<<<<<<<<<<<<<<<<
+  "flex-layout.row#title3":{
+    "children":[
+      "rich-text#titleText3"
+    ]
+  },
+  "rich-text#titleText3":{
+    "props":{
+      "font": "t-heading-1",
+      "text":"Soluciones químicas para la construcción y su mantenimiento",      
+      "textPosition": "CENTER"
+    }
+  },
+
+
+  
+  // >>>>>>>>>>>>>>>>>> List Context Product 1 <<<<<<<<<<<<<<<<<<
+  "list-context.product-list#listContext1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"]
+  },
+
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 4,
+        "phone": 2
+      },
+      "infinite": true
+    }
+  },
+
+
+
+  // >>>>>>>>>>>>>>>>>> Humedad e Industria <<<<<<<<<<<<<<<<<<
+
+  "flex-layout.row#humidity-industry":{
+    "children":[
+      "info-card#humidity",
+      "info-card#industry"
+    ]
+  },
+
+  // Humedad
+  "info-card#humidity": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": false,
+      "textPosition": "center",
+      "headline": "Humedad y Más",
+      "subhead": "Tratamientos humedad ascendente, endurecedor superficial, tratamiento para salitre, hongos y musgo.",
+      "callToActionText": "Ver productos",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+
+  // Industria
+  "info-card#industry": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": false,
+      "textPosition": "center",
+      "headline": "Industria Automotriz",
+      "subhead": "Soluciones de unión, sellado, amortiguación, refuerzo y protección",
+      "callToActionText": "Ver productos",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+  
+  // >>>>>>>>>>>>>>>>>> Titulo 4 <<<<<<<<<<<<<<<<<<
+  "flex-layout.row#title4":{
+    "children":[
+      "rich-text#titleText4"
+    ]
+  },
+  "rich-text#titleText4":{
+    "props":{
+      "font": "t-heading-1",
+      "text":"Productos para todo",      
+      "textPosition": "CENTER"
+    }
+  },
+
+
+
+  // >>>>>>>>>>>>>>>>>> Newsletter <<<<<<<<<<<<<<<<<<
+  "flex-layout.row#newsletter":{
+    "children":[
+      "flex-layout.col#newsletterImg",
+      "newsletter-form"
+    ]
+  },
+
+  // Newsletter Image
+  "flex-layout.col#newsletterImg":{
+    "children":[
+      "image#imageNewsletter"
+    ]
+  },
+  "image#imageNewsletter":{
+    "props":{
+      "src":"assets/newsletter.jpg"
+    }
+  },
+
+  // Newsletter right
+  "newsletter-form": {
+    "children": [
+      "rich-text#newsletterTitle",
+      "newsletter-input-email",
+      "newsletter-submit"
+    ]
+  },
+  "rich-text#newsletterTitle":{
+    "props":{
+      "font": "t-heading-1",
+      "text":"Suscríbete a Nuestro Newsletter",      
+      "textPosition": "CENTER"
+    }
+  },
+  "newsletter-input-email":{
+    "props":{
+      "placeholderText":"Escribe tu correo electrónico aquí",
+      "textAlignment":"center"
+    }
+  },
+  "newsletter-submit":{
+    "props":{
+      "submitButtonLabel": "Suscribirme"
+    }
+  }
+}

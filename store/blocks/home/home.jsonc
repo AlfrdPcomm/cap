@@ -1,0 +1,224 @@
+{
+  "store.home":{
+    "blocks":[
+      //"flex-layout.row#menuPrueba",
+      //"flex-layout.row#catmenu"
+      //"slider-layout#home"
+    ]
+  },
+
+
+
+  "slider-layout#home": {
+    "children": [
+      "info-card#1", 
+      "info-card#2", 
+      "info-card#3", 
+      "info-card#4"
+    ],
+    "props": {
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": false
+      }
+    }
+  },
+
+  "info-card#1": {
+    "props": {
+      "imageUrl": "https://images.unsplash.com/photo-1524185962737-ea7c028a12cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      "isFullModeStyle": true,
+      "headline": "Black Friday",
+      "callToActionText": "Subscribe",
+      "textPosition": "center"
+    }
+  },
+
+  "info-card#2": {
+    "props": {
+      "imageUrl": "https://images.unsplash.com/photo-1524185962737-ea7c028a12cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      "isFullModeStyle": true,
+      "headline": "Black Friday",
+      "callToActionText": "Subscribe",
+      "textPosition": "center"
+    }
+  },
+
+  "info-card#3": {
+    "props": {
+      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/flatflat-brand-logo-square1.png",
+      "isFullModeStyle": true,
+      "headline": "Black Friday",
+      "callToActionText": "Subscribe",
+      "textPosition": "center"
+    }
+  },
+
+  "info-card#4": {
+    "props": {
+      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/flatflat-brand-logo-square2.png",
+      "isFullModeStyle": true,
+      "headline": "Black Friday",
+      "callToActionText": "Subscribe",
+      "textPosition": "center"
+    }
+  },
+
+
+
+
+
+
+
+
+  
+  "flex-layout.row#catmenu":{
+    "children":[
+      "category-menu"
+    ]
+  },
+  "category-menu":{
+    "props": {
+      "showAllDepartments": false,
+      "showSubcategories": false,
+      "menuDisposition": "center",
+      "departments": [
+        1, 2, 3, 48, 35
+      ],
+      "sortSubcategories": "name"
+    }
+  },
+  
+  "flex-layout.row#menuPrueba":{
+    "children":[
+      "flex-layout.col#col1",
+      "flex-layout.col#col2",
+      "flex-layout.col#col3"
+    ]
+  },
+  "flex-layout.col#col1":{
+    "children":[
+      "vtex.menu@2.x:menu#row1col1"
+    ]
+  },
+  "vtex.menu@2.x:menu#row1col1":{
+    "children":[
+      "drawer#home",
+      "menu-item#item1row1col1",
+      "menu-item#item2row1col1",
+      "menu-item#item3row1col1",
+      "menu-item#item4row1col1",
+      "menu-item#item5"
+    ],
+    "props":{
+      //"orientation": "vertical"
+    }
+  },
+  "drawer#home":{
+    "children":[
+      "menu#drawerHome"
+    ]
+  },
+  "menu#drawerHome":{
+    "children":[
+      "menu-item#item1row1col1",
+      "menu-item#item2row1col1",
+      "menu-item#item3row1col1",
+      "menu-item#item4row1col1"
+    ],
+    "props":{
+      "orientation": "vertical"
+    }
+  },
+
+  "menu-item#item1row1col1":{
+    "props":{
+      "type":"custom",
+      "itemProps":{
+        "text":"Item 1 - row 1 - col 1",
+        "href":"/sika",
+        "tagTitle": "Ejemplo de label"
+      }
+    }
+  },
+  "menu-item#item2row1col1":{
+    "props":{
+      "type":"category",
+      "categoryId":3,
+      "itemProps":{
+        "text":"Item 2 - row 1 - col 1"
+      }
+    }
+  },
+  "menu-item#item3row1col1":{
+    "props":{
+      "itemProps":{
+        "text":"Item 3 - row 1 - col 1"
+      }
+    },
+    "blocks":[
+    ]
+  },
+  "menu-item#item4row1col1":{
+    "props":{
+      "itemProps":{
+        "text":"Item 4 - row 1 - col 1"
+      }
+    },
+    "blocks":[
+      //"vtex.menu@2.x:submenu.according#submenuPrueba"
+    ]
+  },
+  /*"vtex.menu@2.x:submenu.according#submenuPrueba":{
+    "children":[
+      "image#imagen"
+    ]
+  },*/
+  "menu-item#item5":{
+    "props":{
+      "text":"Itemn 5"
+    },
+    "blocks":[
+      "vtex.menu@2.x:submenu#categ"
+    ]
+  },
+  "vtex.menu@2.x:submenu#categ":{
+    "children":[
+      "vtex.menu@2.x:submenu#cat1"
+    ]
+  },
+  "vtex.menu@2.x:submenu#cat1":{
+    "props":{
+      "type":"category",
+      "categoryId":3,
+      "orientation": "vertical"
+    }
+  },
+  
+  "vtex.menu@2.x:submenu#submenuPrueba":{
+    "children":[
+      "image#prueba"
+    ],
+    "props":{
+      "width": "100%"
+    }
+  },
+  "flex-layout.col#col2":{
+    "children":[
+      
+    ]
+  },
+  "flex-layout.col#col3":{
+    "children":[
+      
+    ]
+  },
+
+
+  
+  "image#prueba":{
+    "props":{
+      "src":"assets/imagen_share.png"
+    }
+  }
+}
