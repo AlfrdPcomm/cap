@@ -235,7 +235,13 @@
   },
 
   "vtex.menu@2.x:menu#clothing-accordion": {
+<<<<<<< HEAD
     
+=======
+    "props": {
+      "orientation": "vertical"
+    },
+>>>>>>> c4419ac (prueba)
     "children": [
       "menu-item#shorts",
       "menu-item#tank-tops",

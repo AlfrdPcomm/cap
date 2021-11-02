@@ -8,7 +8,10 @@
       "product-specification-group#table",
       "shelf.relatedProducts",
       "product-reviews",
+<<<<<<< HEAD
       "product-reviews",
+=======
+>>>>>>> c4419ac (prueba)
       "product-questions-and-answers"
     ]
   },

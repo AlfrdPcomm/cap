@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "store.home": {
     "blocks": [
      "flex-layout.row#menuperron",
@@ -10,11 +11,22 @@
     ]
   },
 
+=======
+  "store.home":{
+    "blocks":[
+      "flex-layout.row#menu",
+      "flex-layout.row#catmenu",
+      "flex-layout.row#blockClass",
+      "list-context.image-list#demo"
+    ]
+  },
+>>>>>>> c4419ac (prueba)
   "flex-layout.row#catmenu":{
     "children":[
       "category-menu"
     ]
   },
+<<<<<<< HEAD
   "category-menu": {
     "props": {
       "showAllDepartments": false,
@@ -30,20 +42,40 @@
   "flex-layout.row#menuperron":{
     "children":[
       "flex-layout.col#col2"
+=======
+
+  "flex-layout.row#menu":{
+    "children":[
+      "flex-layout.col#col1",
+      "flex-layout.col#col2",
+      "flex-layout.col#col3"
+>>>>>>> c4419ac (prueba)
     ]
   },
 
   "flex-layout.col#col1":{
     "children":[
+<<<<<<< HEAD
 
     ]
   },
+=======
+      "flex-layout.row#texto1"
+    ]
+  },
+  "flex-layout.row#texto1":{
+    
+  },
+>>>>>>> c4419ac (prueba)
   "flex-layout.col#col2":{
     "children":[
       "vtex.menu@2.x:menu#prueba1"
     ]
   },
+<<<<<<< HEAD
 
+=======
+>>>>>>> c4419ac (prueba)
   "vtex.menu@2.x:menu#prueba1":{
     "children":[
       "drawer#home",
@@ -54,6 +86,7 @@
       "menu-item#item5"
     ]
   },
+<<<<<<< HEAD
 
   "drawer#home":{
     "children":[
@@ -79,26 +112,56 @@
         "text": "Item1",
         "href": "/sika",
         "tagTitle":"yo también tengo"
+=======
+  "menu-item#item1":{
+    "props":{
+      "type":"custom",
+      "itemProps":{
+        "text":"Item 1",
+        "href":"/sika",
+        "tagTitle":"Yolo"
+>>>>>>> c4419ac (prueba)
       }
     }
   },
   "menu-item#item2":{
     "props":{
+<<<<<<< HEAD
       "itemProps":{
         "text": "Item2"
+=======
+      "type":"category",
+    "categoryId":3,
+      "itemProps":{
+        "text":"Item 2"
+      }
+    }
+  },
+  "menu-item#item3":{
+    "props":{
+      "itemProps":{
+        "text":"Item 3"
+>>>>>>> c4419ac (prueba)
       }
     },"blocks":[
       "vtex.menu@2.x:submenu#prueba1"
     ]
   },
+<<<<<<< HEAD
   
   "vtex.menu@2.x:submenu#prueba1":{
     "children":[
       "image#prueba"
+=======
+  "vtex.menu@2.x:submenu#prueba1":{
+    "children":[
+      "image#imagenPrueba"
+>>>>>>> c4419ac (prueba)
     ],"props":{
       "width":"100%"
     }
   },
+<<<<<<< HEAD
   "menu-item#item3":{    
     "props":{
       "type":"category",
@@ -161,11 +224,58 @@
   "flex-layout.row#blockclass":{
     "children":[
       "image#prueba"
+=======
+  "menu-item#item4":{
+    "props":{
+      "itemProps":{
+        "text":"Item 4"
+      }
+    },"blocks":[
+      "vtex.menu@2.x:submenu.accordion"
+    ]
+  },
+  "menu-item#item5":{
+    "props":{
+      "itemProps":{
+        "text":"Item 5"
+      }
+    }
+  },
+  "vtex.menu@2.x:submenu.accordion":{
+    "children":[
+      "image#imagenPrueba"
+    ]
+  },
+  "flex-layout.col#col3":{
+    "children":[
+
+    ]
+  },
+  "drawer#home":{
+    "children":[
+      "menu#drawerhome"
+    ]
+  },
+  "menu#drawerhome":{
+    "children":[
+      "menu-item#item1",
+      "menu-item#item2",
+      "menu-item#item3",
+      "menu-item#item4"
+    ],"props":{
+      "orientation":"vertical"
+    }
+  },
+  "flex-layout.row#blockClass":{
+    "children":[
+      "image#imagenPrueba"
+>>>>>>> c4419ac (prueba)
     ],
     "props":{
       "blockClass":"ubicas"
     }
   },
+<<<<<<< HEAD
 
   "image#prueba":{
     "props":{
@@ -174,10 +284,18 @@
     }
   },
 
+=======
+  "image#imagenPrueba":{
+    "props":{
+      "src":"assets/rgb.png"
+    }
+  },
+>>>>>>> c4419ac (prueba)
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
     "props": {
       "preload": true,
+<<<<<<< HEAD
       "images": [
         {
           "image": "assets/halo.jpg",
@@ -185,6 +303,16 @@
         },
         {
           "image": "assets/halo.jpg",
+=======
+      "height": 650,
+      "images": [
+        {
+          "src": "assets/carr2.jpg",
+          "description": "something something"
+        },
+        {
+          "src": "assets/carr1.jpg",
+>>>>>>> c4419ac (prueba)
           "description": "something something"
         }
       ]
@@ -193,7 +321,10 @@
 
   "slider-layout#demo-images": {
     "props": {
+<<<<<<< HEAD
       "blockClass":"sldimg",
+=======
+>>>>>>> c4419ac (prueba)
       "itemsPerPage": {
         "desktop": 1,
         "tablet": 1,
@@ -201,6 +332,7 @@
       },
       "infinite": true
     }
+<<<<<<< HEAD
   },
 
   "list-context.product-list#demo1": {
@@ -230,3 +362,7 @@
 
   
 }
+=======
+  }
+}
+>>>>>>> c4419ac (prueba)

@@ -57,7 +57,11 @@
         "background": {
           "base": "#ffffff",
           "base--inverted": "#03044e",
+<<<<<<< HEAD
           "action-primary": "#ff0000",
+=======
+          "action-primary": "#0F3E99",
+>>>>>>> c4419ac (prueba)
           "action-secondary": "#eef3f7",
           "emphasis": "#f71963",
           "disabled": "#f2f4f5",

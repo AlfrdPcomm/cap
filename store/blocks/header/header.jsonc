@@ -42,7 +42,11 @@
     },
     "children": [
       "vtex.menu@2.x:menu#websites",
+<<<<<<< HEAD
       "flex-layout.col#spacer",      
+=======
+      "flex-layout.col#spacer",
+>>>>>>> c4419ac (prueba)
       "vtex.menu@2.x:menu#institutional"
     ]
   },

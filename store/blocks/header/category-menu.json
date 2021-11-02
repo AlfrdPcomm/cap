@@ -5,7 +5,12 @@
     },
     "children": [
       "menu-item#category-apparel",
+<<<<<<< HEAD
       "menu-item#category-home"
+=======
+      "menu-item#category-home",
+      "menu-item#more"
+>>>>>>> c4419ac (prueba)
     ]
   },
   "menu-item#category-apparel": {
@@ -143,7 +148,10 @@
   },
   "flex-layout.col#menu-more-2": {
     "children": [
+<<<<<<< HEAD
       
+=======
+>>>>>>> c4419ac (prueba)
     ]
   },
   "vtex.menu@2.x:menu#more": {

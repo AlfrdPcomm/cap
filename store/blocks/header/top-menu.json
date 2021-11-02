@@ -8,9 +8,20 @@
   "menu-item#shop": {
     "props": {
       "id": "menu-item-shop",
+<<<<<<< HEAD
       "type": "category",
       "categoryId":35,
       "itemProps": {
+=======
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shop",
+>>>>>>> c4419ac (prueba)
         "text": "Shop"
       }
     }

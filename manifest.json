@@ -64,7 +64,10 @@
     "vtex.tab-layout": "0.x",
     "vtex.condition-layout": "2.x",
     "vtex.css-handles": "1.x",
+<<<<<<< HEAD
     "vtex.store-newsletter": "1.x",
+=======
+>>>>>>> c4419ac (prueba)
     "vtex.category-menu": "2.x"
   },
   "peerDependencies": {
