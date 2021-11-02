@@ -1,0 +1,232 @@
+{
+  "store.home": {
+    "blocks": [
+     "flex-layout.row#menuperron",
+     "flex-layout.row#catmenu",
+     "flex-layout.row#blockclass",
+     "list-context.image-list#demo",
+     "list-context.product-list#demo1",
+     "newsletter-form"
+    ]
+  },
+
+  "flex-layout.row#catmenu":{
+    "children":[
+      "category-menu"
+    ]
+  },
+  "category-menu": {
+    "props": {
+      "showAllDepartments": false,
+      "showSubcategories": false,
+      "menuDisposition": "center",
+      "departments": [
+        1,2,3,48,35
+      ],
+      "sortSubcategories": "name"
+    }
+  },
+
+  "flex-layout.row#menuperron":{
+    "children":[
+      "flex-layout.col#col2"
+    ]
+  },
+
+  "flex-layout.col#col1":{
+    "children":[
+
+    ]
+  },
+  "flex-layout.col#col2":{
+    "children":[
+      "vtex.menu@2.x:menu#prueba1"
+    ]
+  },
+
+  "vtex.menu@2.x:menu#prueba1":{
+    "children":[
+      "drawer#home",
+      "menu-item#item1",
+      "menu-item#item2",
+      "menu-item#item3",
+      "menu-item#item4",
+      "menu-item#item5"
+    ]
+  },
+
+  "drawer#home":{
+    "children":[
+      "menu#drawerhome"
+    ]
+  },"menu#drawerhome":{
+    "children":[
+      "menu-item#item1",
+      "menu-item#item2",
+      "menu-item#item3",
+      "menu-item#item4",
+      "menu-item#item5"
+
+    ],"props":{
+      "orientation":"vertical"
+    }
+  },
+
+  "menu-item#item1":{    
+    "props":{
+      "type":"custom",
+      "itemProps":{
+        "text": "Item1",
+        "href": "/sika",
+        "tagTitle":"yo también tengo"
+      }
+    }
+  },
+  "menu-item#item2":{
+    "props":{
+      "itemProps":{
+        "text": "Item2"
+      }
+    },"blocks":[
+      "vtex.menu@2.x:submenu#prueba1"
+    ]
+  },
+  
+  "vtex.menu@2.x:submenu#prueba1":{
+    "children":[
+      "image#prueba"
+    ],"props":{
+      "width":"100%"
+    }
+  },
+  "menu-item#item3":{    
+    "props":{
+      "type":"category",
+      "categoryId":3,
+      "itemProps":{
+        "text": "Item3"
+      }
+    }
+  },
+  "menu-item#item4":{
+    "props":{
+      "itemProps":{
+        "text": "Item4"
+      }
+    },"blocks":[
+      "vtex.menu@2.x:submenu.accordion#prueba1"
+    ]
+  },
+  
+  "vtex.menu@2.x:submenu.accordion#prueba1":{
+    "children":[
+      "image#prueba"
+    ]
+  },
+
+  "menu-item#item5":{
+    "props":{
+      "text": "item 5"
+    },"blocks":[
+      "vtex.menu@2.x:submenu#categ"
+    ]
+  },
+
+  "vtex.menu@2.x:submenu#categ":{
+    "children":[
+      "flex-layout.row#contenido"
+      
+    ],"props":{
+      "width":"100%"
+    }
+  },"flex-layout.row#contenido":{
+    "children":[
+      "vtex.menu@2.x:menu#cat1"
+    ]
+  },
+
+  "vtex.menu@2.x:menu#cat1":{
+    "props":{
+      "categoryId":3,
+      "orientation":"vertical"
+    }
+  },
+
+  "flex-layout.col#col3":{
+    "children":[
+      
+    ]
+  },
+
+  "flex-layout.row#blockclass":{
+    "children":[
+      "image#prueba"
+    ],
+    "props":{
+      "blockClass":"ubicas"
+    }
+  },
+
+  "image#prueba":{
+    "props":{
+      "src":"assets/halo.jpg",
+      "blockClass":"imgpr"
+    }
+  },
+
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "image": "assets/halo.jpg",
+          "description": "something something"
+        },
+        {
+          "image": "assets/halo.jpg",
+          "description": "something something"
+        }
+      ]
+    }
+  },
+
+  "slider-layout#demo-images": {
+    "props": {
+      "blockClass":"sldimg",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true
+    }
+  },
+
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-images1"]
+  },
+
+  "slider-layout#demo-images1": {
+    "props": {
+      "blockClass":"sldimg",
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true
+    }
+  },
+
+  "newsletter-form": {
+    "children": [
+      "newsletter-input-email",
+      "newsletter-input-name",
+      "newsletter-submit"
+    ]
+  }
+
+  
+}
